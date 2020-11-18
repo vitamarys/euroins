@@ -1,0 +1,143 @@
+.online {
+  width: 100%;
+  background-color: $white;
+  padding: 100px 0;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.online__title {
+  font-family: "Roboto - Black";
+  font-size: 58px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  color: $blue;
+  margin-bottom: 70px;
+}
+.online__text {
+  color: $blue;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.online__btn {
+  margin-top: 85px;
+  padding: 30px 45px;
+  text-align: center;
+  color: $blue;
+  background-color: $yellow;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 8px;
+  text-transform: uppercase;
+  transition: ease-in 0.3s;
+  &:hover {
+    transition: ease-in 0.3s;
+    color: $yellow;
+    background-color: $blue;
+  }
+}
+.news {
+  width: 100%;
+  background-color: $lightyellow;
+  padding: 80px 0;
+  .container {
+    position: relative;
+  }
+}
+.news__title {
+  font-family: "Roboto - Black";
+  font-size: 58px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  color: $blue;
+  margin-bottom: 70px;
+}
+.news__all {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $blue;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  &:hover {
+    text-decoration: underline;
+  }
+  &::after {
+    content: url(../assets/Shape_12.png);
+    margin-left: 10px;
+  }
+}
+.news__content {
+  width: 100%;
+  display: flex;
+  &__item {
+    background-color: $white;
+    width: calc(33.3333% - 30px);
+
+    margin-right: 30px;
+    padding: 40px 35px;
+    &:hover {
+      transition: ease-in 0.3s;
+      background-color: $blue;
+    }
+    &:hover .news__content__item__date {
+      transition: ease-in 0.3s;
+      color: $white;
+    }
+    &:hover .news__content__item__title {
+      transition: ease-in 0.3s;
+      color: $white;
+    }
+    &:hover .news__content__item__description {
+      transition: ease-in 0.3s;
+      color: $white;
+    }
+    &__date {
+      opacity: 0.5;
+      color: $blue;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 30px;
+      display: block;
+    }
+    &__title {
+      min-height: 88px;
+      font-family: "Roboto - Black";
+      font-size: 19px;
+      font-weight: 400;
+      line-height: 29px;
+      color: $blue;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+    &__description {
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 29px;
+      color: $blue;
+      margin-bottom: 30px;
+    }
+    &__link {
+      float: right;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 700;
+      color: $yellow;
+      text-transform: uppercase;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

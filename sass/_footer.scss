@@ -1,0 +1,130 @@
+.footer {
+  width: 100%;
+  background-color: $blue;
+  padding-top: 100px;
+}
+.footer__content {
+  width: 100%;
+  display: flex;
+
+  &__item {
+    width: 25%;
+
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid $yellow;
+    padding-left: 40px;
+    &:nth-child(1) {
+      padding: 0;
+    }
+    &:nth-last-child(1) {
+      border: none;
+    }
+    &__logo {
+      margin-bottom: 60px;
+    }
+    &__social {
+      margin-bottom: 50px;
+      &__img {
+        margin-right: 15px;
+        opacity: 0.5;
+        &:hover {
+          opacity: 1;
+          transition: 0.3s;
+        }
+      }
+    }
+    &__title {
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 900;
+      color: $white;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      &:hover {
+        transition: 0.2s;
+        color: $yellow;
+        text-decoration: underline;
+      }
+    }
+    &__link {
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 400;
+      color: $white;
+      margin-bottom: 10px;
+      &:hover {
+        transition: 0.2s;
+        color: $yellow;
+        text-decoration: underline;
+      }
+      &__online {
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 400;
+        color: $yellow;
+        position: relative;
+        top: -10px;
+        left: 20px;
+      }
+    }
+    &__phone {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 40px;
+
+      &__yellow {
+        font-family: "Roboto - Black";
+        font-size: 21px;
+        font-weight: 400;
+        color: $yellow;
+      }
+      &__light {
+        opacity: 0.3;
+        color: #ffffff;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+.bot {
+  margin-top: 20px;
+}
+.footer-bot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  padding-bottom: 30px;
+  &__link {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.3;
+    color: $white;
+    &:hover {
+      opacity: 1;
+      transition: ease-in-out 0.3s;
+    }
+  }
+  &__btn {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    border-radius: 8px;
+    color: $yellow;
+    border: 1px solid $yellow;
+    &:hover {
+      background-color: $lightyellow;
+      transition: ease-in-out 0.3s;
+      color: $blue;
+    }
+  }
+}
+.visa {
+  margin-left: 40px;
+}
